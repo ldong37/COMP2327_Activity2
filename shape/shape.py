@@ -30,3 +30,15 @@ def color(self) -> str:
      """
      return self._color
 
+@property
+@abstractmethod
+def area(self) ->float:
+     """
+     Calculate and return the area of the shape.
+     This abstract method must be implemented by all subclasses to provide the specific area calculation
+
+     Return:
+     float : The area of the shape.
+     """
+     pass
+
