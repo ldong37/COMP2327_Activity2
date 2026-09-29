@@ -55,3 +55,5 @@ def area(self) -> float:
     Returns:
        float:The value of triangle's area should be in square centimeter 
     """
+
+    p = (self._side_1 + self._side_2 + self._side_3) / 2
