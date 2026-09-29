@@ -35,10 +35,30 @@ def color(self) -> str:
 def area(self) ->float:
      """
      Calculate and return the area of the shape.
-     This abstract method must be implemented by all subclasses to provide the specific area calculation
+     Using this abstract method to implement by all subclasses to provide the specific area calculation
 
      Return:
      float : The area of the shape.
      """
      pass
 
+@abstractmethod
+def get_perimeter(self) -> float:
+     """
+     Calculate and return the perimeter of the shape
+     Using this abstarct method to implement by all subclasses to provide the specific perimeter calculation
+
+     Return:
+     float : The perimeter calculation
+     """
+     pass
+
+def __str__(self) -> str:
+     """
+     Return a user-friendly string representation of the shape.
+
+     Returns:
+      str: A string on the format 'The shape color is <color>.'
+     """
+
+     return f"The shape color is {self._color}."
