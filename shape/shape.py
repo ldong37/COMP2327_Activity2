@@ -19,3 +19,14 @@ def __init__(self, color: str):
             raise ValueError("color cannot be blank")
             self._color = color.strip()
 
+
+@property
+
+def color(self) -> str:
+     """
+     Get the color of the shape.
+     Returns:
+     str: The current color of the shape.
+     """
+     return self._color
+
