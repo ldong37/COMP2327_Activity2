@@ -54,3 +54,12 @@ def get_perimeter(self) -> float :
 
     return (self._length + self._width) * 2
 
+def __str__(self) -> str :
+    """
+    Return a user-friendly string representation of the Rectangle.
+
+        Returns:
+            str: A string describing the color, length, and width of the rectangle.
+    """
+    return (f"{super().__str__()} This rectangle has a length of "
+                f"{self._length}cm and a width of {self._width}cm.")
