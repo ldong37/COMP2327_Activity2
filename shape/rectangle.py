@@ -43,3 +43,14 @@ def area(self) -> float:
          float: The area of the rectangle is width * length
     """
     return self._length * self._width
+
+
+def get_perimeter(self) -> float :
+    """
+    Calculate and return the perimeter of the rectangle.
+    Returns:
+         float: The perimeter of the rectangle is (width + length) *2
+    """ 
+
+    return (self._length + self._width) * 2
+
