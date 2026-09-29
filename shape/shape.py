@@ -14,3 +14,8 @@ def __init__(self, color: str):
         Raises:
         Value Error: If the color arguement is a blank string
         """
+
+        if color.strip() == "":
+            raise ValueError("color cannot be blank")
+            self._color = color.strip()
+
