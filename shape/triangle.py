@@ -67,3 +67,14 @@ def get_perimeter(self) -> str :
     """
 
     return self._side_1 + self._side_2 + self._side_3
+
+def __str__(self) ->str:
+    """
+    Return a user-friendly string representation of the Triangle.
+    
+    Returns:
+    str: A string describing the color and side lengths of the triangle.
+    """
+
+    return (f"{super().__str__()} This triangle has three sides with positive value"
+            f"{self._side_1}, {self._side_2}, and {self._side_3} centimeters.")
