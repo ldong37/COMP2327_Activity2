@@ -9,3 +9,19 @@ class Rectangle(Shape):
     methods.
     """
 
+def __init__(self,
+             color: str,
+             length: float,
+             width: float):
+    """
+    Initialize a rectangle with a color, length, width
+    Args:
+    color (str): The color of the rectangle
+    length (float): The length of opposing sides in centimeters.
+    width (float): The width of the other sides in centimeters.
+
+    Raises:
+        ValueError: If the color is blank ,length and width of the rectangle is less or equal to zero.
+    """
+
+    super().__init__(color)
