@@ -25,3 +25,12 @@ def __init__(self,
     """
 
     super().__init__(color)
+
+    if length <= 0:
+        raise ValueError ("Length must be a positive value")
+
+    if width <= 0:
+        raise ValueError ("Width must be a positive value")
+
+    self._length = length
+    self._width = width
