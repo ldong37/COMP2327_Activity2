@@ -34,3 +34,12 @@ def __init__(self,
 
     self._length = length
     self._width = width
+
+@property   
+def area(self) -> float:
+    """
+    Calculate and return the area of the rectangle.
+    Returns:
+         float: The area of the rectangle is width * length
+    """
+    return self._length * self._width
