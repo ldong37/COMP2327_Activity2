@@ -44,3 +44,14 @@ class Triangle(Shape):
         self._side_1 = side_1
         self._side_2 = side_2
         self._side_3 = side_3
+
+@property
+def area(self) -> float:
+    """
+    Calculate and return the area of the area of the triangle by using Heron method:
+    p (half-perimeter of the triangle): (side_1 + side_2 + side_3)/2
+    area = sqrt (p*(p-side_1)*(p-side_2)*(p-side_3))
+
+    Returns:
+       float:The value of triangle's area should be in square centimeter 
+    """
