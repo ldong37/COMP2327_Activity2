@@ -24,3 +24,6 @@ class Triangle(Shape):
         Raisess:
         ValueError: The color is blank and the value of all sides are less or equal to zero
         """
+
+        super().__init__(color)
+            
