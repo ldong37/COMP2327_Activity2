@@ -22,8 +22,25 @@ class Triangle(Shape):
         side_3 (float) :The length of the third side of the triangle
 
         Raisess:
-        ValueError: The color is blank and the value of all sides are less or equal to zero
+        ValueError: The color is blank and the value of all sides are less or equal to zero and the sum of 2 sides must larger than the other side
         """
 
         super().__init__(color)
-            
+
+        if side_1 <= 0 :
+            raise ValueError ("side_1 must be a positive value")
+
+        if side_2 <= 0 :
+            raise ValueError ("side_2 must be a positive value")
+
+        if side_3 <= 0 :
+            raise ValueError ("side_3 must be a positive value")
+
+        if (side_1 + side_2 < side_3
+            and side_2 + side_3 < side_1
+            and side_3 + side_1 < side_2):
+            raise ValueError ("The sides do not match with the Triangle Inequality Theorem ")
+
+        self._side_1 = side_1
+        self._side_2 = side_2
+        self._side_3 = side_3
