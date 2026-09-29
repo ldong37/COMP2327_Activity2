@@ -57,3 +57,4 @@ def area(self) -> float:
     """
 
     p = (self._side_1 + self._side_2 + self._side_3) / 2
+    return math.sqrt (p * (p-self._side_1) * (p-self._side_2) * (p-self._side_3))
