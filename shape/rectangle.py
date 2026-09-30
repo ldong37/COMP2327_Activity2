@@ -11,7 +11,7 @@ class Rectangle(Shape):
 
 def __init__(self,
              color: str,
-             length: float,
+             length:float,
              width: float):
     """
     Initialize a rectangle with a color, length, width

@@ -46,37 +46,37 @@ class Triangle(Shape):
         self._side_2 = side_2
         self._side_3 = side_3
 
-@property
-def area(self) -> float:
-    """
-    Calculate and return the area of the area of the triangle by using Heron method:
-    sp (half-perimeter of the triangle): (side_1 + side_2 + side_3)/2
-    area = sqrt (sp*(sp-side_1)*(sp-side_2)*(sp-side_3))
+    @property
+    def area(self) -> float:
+       """
+       Calculate and return the area of the area of the triangle by using Heron method:
+       sp (half-perimeter of the triangle): (side_1 + side_2 + side_3)/2
+       area = sqrt (sp*(sp-side_1)*(sp-side_2)*(sp-side_3))
 
-    Returns:
+       Returns:
        float:The value of triangle's area should be in square centimeter 
-    """
+       """
 
-    sp = (self._side_1 + self._side_2 + self._side_3) / 2
-    return math.sqrt (sp * (sp-self._side_1) * (sp-self._side_2) * (sp-self._side_3))
+       sp = (self._side_1 + self._side_2 + self._side_3) / 2
+       return math.sqrt (sp * (sp-self._side_1) * (sp-self._side_2) * (sp-self._side_3))
     
 
-def get_perimeter(self) ->float :
-    """
-    Calculate and return the perimeter of the triangle.
-    Returns:
-    float: The perimeter of the triangle in centimeters.
-    """
+    def get_perimeter(self) ->float :
+       """
+       Calculate and return the perimeter of the triangle.
+       Returns:
+       float: The perimeter of the triangle in centimeters.
+       """
 
-    return self._side_1 + self._side_2 + self._side_3
+       return self._side_1 + self._side_2 + self._side_3
 
-def __str__(self) ->str:
-    """
-    Return a user-friendly string representation of the Triangle.
+    def __str__(self) ->str:
+       """
+       Return a user-friendly string representation of the Triangle.
     
-    Returns:
-    str: A string describing the color and side lengths of the triangle.
-    """
+       Returns:
+       str: A string describing the color and side lengths of the triangle.
+       """
 
-    return (f"{super().__str__()} This triangle has three sides with positive value"
-            f"{self._side_1}, {self._side_2}, and {self._side_3} centimeters.")
+       return (f"{super().__str__()} This triangle has three sides with positive value"
+               f"{self._side_1}, {self._side_2}, and {self._side_3} centimeters.")
