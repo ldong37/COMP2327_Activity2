@@ -15,3 +15,11 @@ def test_init_blank_color(self):
     with self.assertRaises(ValueError) as context:
         Triangle(" ", 5.0, 6.0, 7.0)
     self.assertEqual(str(context.exception),"color cannot be blank")
+
+def test_init_side_1_not_greater_than_zero(self):
+    """Test that side_1 <= 0 raises ValueError with correct message"""
+    with self.assertRaises(ValueError) as context:
+        Triangle("red",0,6.0,7.0)
+    self.assertEqual(str(context.exception),"side_1 must be a positive value")
+
+    
