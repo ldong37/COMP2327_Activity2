@@ -15,3 +15,10 @@ class TestRectangle (unittest.TestCase):
         with self.assertRaises(ValueError) as context :
             Rectangle("  ", 5.0, 6.0)
         self.assertEqual(str(context.exception), "color cannot be blank")
+
+    def test_init_length_not_greater_than_zero(self):
+        """Test that length <= 0 raises ValueError with correct message."""
+        with self.assertRaises(ValueError) as context:
+            Rectangle("red", 0, 6.0)
+        self.assertEqual(str(context.exception),
+                         "length must be a positive value") 
