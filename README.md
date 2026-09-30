@@ -8,9 +8,8 @@ This activity will help to reinforce learning of the Module 2 concepts of:
 - Package Initialization
 
 ## Author
-
-[Your name]
-
+Dong Le Quoc Bao - ldong37
 ## Additional Information
-
-[ Use this space to include additional information that may help in your learning. ]
+I built an abstract "Shape" class with "Triangle" and "Rectangle" subclasses
+that implement "area" and "get_perimeter()".The "shape/__init__.py" package
+setup lets me import everything with one line. Unit tests are in "tests/".
