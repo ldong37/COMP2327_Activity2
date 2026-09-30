@@ -36,3 +36,9 @@ class TestRectangle (unittest.TestCase):
         self.assertEqual(rectangle._color, "red")
         self.assertEqual(rectangle._length, 5.0)
         self.assertEqual(rectangle._width, 6.0)
+
+    #Color property
+    def test_color_returns_current_state(self):
+        """Test that the color property returns the current state."""
+        rectangle = Rectangle("blue", 5.0, 6.0)
+        self.assertEqual(rectangle.color, "blue")
