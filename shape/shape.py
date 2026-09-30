@@ -1,5 +1,7 @@
 from abc import ABC , abstractmethod
 
+
+
 class Shape (ABC):
     """
     Represent a geometric shape with a color.
@@ -22,7 +24,7 @@ def __init__(self, color: str):
 
 @property
 
-def color(self) -> str:
+def color(self) ->str:
      """
      Get the color of the shape.
      Returns:

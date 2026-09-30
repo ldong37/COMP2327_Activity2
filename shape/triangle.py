@@ -41,7 +41,7 @@ class Triangle(Shape):
             and side_3 + side_1 < side_2):
             raise ValueError ("The sides do not match with the Triangle Inequality Theorem ")
         
-        self._color = color.strip()
+    
         self._side_1 = side_1
         self._side_2 = side_2
         self._side_3 = side_3
@@ -59,8 +59,9 @@ def area(self) -> float:
 
     sp = (self._side_1 + self._side_2 + self._side_3) / 2
     return math.sqrt (sp * (sp-self._side_1) * (sp-self._side_2) * (sp-self._side_3))
+    
 
-def get_perimeter(self) -> str :
+def get_perimeter(self) ->float :
     """
     Calculate and return the perimeter of the triangle.
     Returns:

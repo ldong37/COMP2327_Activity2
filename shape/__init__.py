@@ -5,4 +5,4 @@ from shape.shape import Shape
 from shape.triangle import Triangle
 from shape.rectangle import Rectangle
 
-_all_ = ["Shape", "Triangle", "Rectangle"]
+__all__ = ["Shape", "Triangle", "Rectangle"]

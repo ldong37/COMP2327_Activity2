@@ -50,10 +50,13 @@ def test_init_initializes_new_instance(self):
  #Color property
 def test_color_returns_current_state(self):
     triangle = Triangle("blue", 5.0, 6.0, 7.0)
-    self.assertEqual(triangle.color, "blue")
+    self.assertEqual(triangle._color, "blue")
 
 
 #Area property
 def test_area_returns_triangle_area(self):
         triangle = Triangle("red", 3.0, 4.0, 5.0)
-        self.assertEqual(triangle.area, 6.0)
+        self.assertEqual(triangle.area , 6.0)
+
+
+
