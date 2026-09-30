@@ -76,5 +76,5 @@ class TestTriangle (unittest.TestCase):
                     "5.0, 6.0, and 7.0 centimeters.")
         self.assertEqual(str(triangle), expected)
 
-    if __name__ == "__main__":
-       unittest.main()
+if __name__ == "__main__":
+    unittest.main()

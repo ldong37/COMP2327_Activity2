@@ -45,8 +45,23 @@ class TestRectangle (unittest.TestCase):
 
     #Area property
     def test_area_returns_rectangle_area(self):
-       """that the area property returns the correct rectangle area."""
+       """Test that the area property returns the correct rectangle area."""
        rectangle = Rectangle("red", 5.0, 6.0)
        self.assertEqual(rectangle.area, 30.0)
 
-     
+    #Get_perimeter()
+    def test_get_perimeter_returns_rectangle_perimeter(self):
+        """Test that get_perimeter returns the correct rectangle perimeter."""
+        rectangle = Rectangle("red", 5.0, 6.0)
+        self.assertEqual(rectangle.get_perimeter(),22.0)
+
+    #__str__()
+    def test_str_returns_string_representation(self):
+        """Test that __str__ returns the correct string representation."""
+        rectangle = Rectangle("red", 5.0, 6.0)
+        expected = ("The shape color is red. This rectangle has a length of "
+                    "5.0cm and a width of 6.0cm.")
+        self.assertEqual(str(rectangle), expected)
+
+if __name__ == "__main__":
+    unittest.main()

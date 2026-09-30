@@ -1,6 +1,6 @@
 """A program to demonstrate the concepts from module 2."""
 
-__author__ = "COMP-2327 Faculty"
+__author__ = "CO"
 __version__ = "1.0.0"
 
 def main():
