@@ -25,7 +25,7 @@ def main():
     # class.
     # Append the Rectangle to the list of shapes.
     try:
-        rectangle_1 = Rectangle ("red", 5.0, 6.0, 7.0)
+        rectangle_1 = Rectangle("red", 5.0, 6.0)
         shapes.append(rectangle_1)
     except ValueError as b:
         print(b)
