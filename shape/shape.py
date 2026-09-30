@@ -17,7 +17,7 @@ def __init__(self, color: str):
 
         if color.strip() == "":
             raise ValueError("color cannot be blank")
-            self._color = color.strip()
+        self._color = color.strip()
 
 
 @property
@@ -28,11 +28,11 @@ def color(self) -> str:
      Returns:
      str: The current color of the shape.
      """
-     return self._color
+     return self._color 
 
 @property
 @abstractmethod
-def area(self) ->float:
+def area(self) -> float:
      """
      Calculate and return the area of the shape.
      Using this abstract method to implement by all subclasses to provide the specific area calculation

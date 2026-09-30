@@ -40,7 +40,8 @@ class Triangle(Shape):
             and side_2 + side_3 < side_1
             and side_3 + side_1 < side_2):
             raise ValueError ("The sides do not match with the Triangle Inequality Theorem ")
-
+        
+        self._color = color.strip()
         self._side_1 = side_1
         self._side_2 = side_2
         self._side_3 = side_3
