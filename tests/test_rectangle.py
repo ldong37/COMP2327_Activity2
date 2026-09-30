@@ -22,3 +22,10 @@ class TestRectangle (unittest.TestCase):
             Rectangle("red", 0, 6.0)
         self.assertEqual(str(context.exception),
                          "length must be a positive value") 
+
+    def test_init_width_not_greater_than_zero(self):
+            """Test that width <= 0 raises ValueError with correct message."""
+            with self.assertRaises(ValueError) as context:
+                Rectangle("red", 5.0, 0)
+            self.assertEqual(str(context.exception),
+                             "width must be a positive value") 
