@@ -29,3 +29,10 @@ class TestRectangle (unittest.TestCase):
                 Rectangle("red", 5.0, 0)
             self.assertEqual(str(context.exception),
                              "width must be a positive value") 
+
+    def test_init_initializes_new_instance(self):
+        """Test that a new instance stores the private attributes correctly."""
+        rectangle = Rectangle("red", 5.0, 6.0)
+        self.assertEqual(rectangle._color, "red")
+        self.assertEqual(rectangle._length, 5.0)
+        self.assertEqual(rectangle._width, 6.0)
