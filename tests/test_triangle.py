@@ -35,7 +35,17 @@ def test_init_side_3_not_greater_than_zero(self):
     self.assertEqual(str(context.exception),"side_3 must be a positive value")
 
 def test_init_violates_triangle_inequality(self):
-    """ Test that sides violating the Triangle Ineuqality raise ValueError"""
+    """ Test that sides violating the Triangle Inequality raise ValueError"""
     with self.assertRaises(ValueError) as context:
         Triangle("red",1.0,2.0,7.0)
     self.assertEqual(str(context.exception),"The sides do not satisfy the Triangle Inequality Theorem")
+
+def test_init_initializes_new_instance(self):
+        """Test that a new instance is properly initialized."""
+        triangle = Triangle("red", 5.0, 6.0, 7.0)
+        self.assertEqual(triangle._color, "red")
+        self.assertEqual(triangle._side_1, 5.0)
+        self.assertEqual(triangle._side_2, 6.0)
+        self.assertEqual(triangle._side_3, 7.0)
+
+ #Color property
