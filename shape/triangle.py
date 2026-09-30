@@ -49,15 +49,15 @@ class Triangle(Shape):
 def area(self) -> float:
     """
     Calculate and return the area of the area of the triangle by using Heron method:
-    p (half-perimeter of the triangle): (side_1 + side_2 + side_3)/2
-    area = sqrt (p*(p-side_1)*(p-side_2)*(p-side_3))
+    sp (half-perimeter of the triangle): (side_1 + side_2 + side_3)/2
+    area = sqrt (sp*(sp-side_1)*(sp-side_2)*(sp-side_3))
 
     Returns:
        float:The value of triangle's area should be in square centimeter 
     """
 
-    p = (self._side_1 + self._side_2 + self._side_3) / 2
-    return math.sqrt (p * (p-self._side_1) * (p-self._side_2) * (p-self._side_3))
+    sp = (self._side_1 + self._side_2 + self._side_3) / 2
+    return math.sqrt (sp * (sp-self._side_1) * (sp-self._side_2) * (sp-self._side_3))
 
 def get_perimeter(self) -> str :
     """
