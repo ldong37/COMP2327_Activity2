@@ -36,9 +36,9 @@ class Triangle(Shape):
         if side_3 <= 0 :
             raise ValueError ("side_3 must be a positive value")
 
-        if (side_1 + side_2 < side_3
-            and side_2 + side_3 < side_1
-            and side_3 + side_1 < side_2):
+        if not (side_1 + side_2 > side_3
+               and side_2 + side_3 > side_1
+               and side_3 + side_1 > side_2):
             raise ValueError ("The sides do not match with the Triangle Inequality Theorem ")
         
     
@@ -71,12 +71,12 @@ class Triangle(Shape):
        return self._side_1 + self._side_2 + self._side_3
 
     def __str__(self) ->str:
-       """
-       Return a user-friendly string representation of the Triangle.
+        """
+        Return a user-friendly string representation of the Triangle.
     
-       Returns:
-       str: A string describing the color and side lengths of the triangle.
-       """
+        Returns:
+        str: A string describing the color and side lengths of the triangle.
+        """
 
-       return (f"{super().__str__()} This triangle has three sides with positive value"
+        return (f"{super().__str__()} This triangle has three sides with lengths of"
                f"{self._side_1}, {self._side_2}, and {self._side_3} centimeters.")
