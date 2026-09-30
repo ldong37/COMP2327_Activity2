@@ -42,3 +42,11 @@ class TestRectangle (unittest.TestCase):
         """Test that the color property returns the current state."""
         rectangle = Rectangle("blue", 5.0, 6.0)
         self.assertEqual(rectangle.color, "blue")
+
+    #Area property
+    def test_area_returns_rectangle_area(self):
+       """that the area property returns the correct rectangle area."""
+       rectangle = Rectangle("red", 5.0, 6.0)
+       self.assertEqual(rectangle.area, 30.0)
+
+     
