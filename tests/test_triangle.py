@@ -27,3 +27,9 @@ def test_init_side_2_not_greater_than_zero(self):
     with self.assertRaises(ValueError) as context:
         Triangle("red",5.0,0,7.0)
     self.assertEqual(str(context.exception),"side_2 must be a positive value")
+
+def test_init_side_3_not_greater_than_zero(self):
+    """Test that side_3 <= 0 raises ValueError with correct message"""
+    with self.assertRaises(ValueError) as context:
+        Triangle("red",5.0,0,7.0)
+    self.assertEqual(str(context.exception),"side_3 must be a positive value")
