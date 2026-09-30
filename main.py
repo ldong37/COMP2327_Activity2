@@ -57,7 +57,11 @@ def main():
     #    - Print the shape.
     #    - Print the area of the shape to 2 decimal places.
     #    - Print the perimeter of the shape to 2 decimal places.
-
+    for shape in shapes:
+        print(shape)
+        print(f"Area: {shape.area:.2f}")
+        print(f"Perimeter: {shape.get_perimeter():.2f}")
+        print()  
 
 if __name__ == "__main__":
     main()
